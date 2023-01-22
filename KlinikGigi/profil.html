@@ -19,7 +19,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__wobble" src="dist/img/AdminLTELogo.png"  height="60" width="60">
+    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -38,8 +38,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="index.html" class="nav-link text-light">Booking</a>
       </li>
+      
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link text-light">Tentang Kami</a>
+        <a href="index.html" class="nav-link text-light">Tentang Kami</a>
       </li>
     </ul>
 
@@ -76,12 +77,12 @@
   <aside class="main-sidebar navbar-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
-      <img src="gambar/gigi.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <b><span class="brand-text font-weight-light text-light">Klinik Gigi Faiz</span></b>
+      <img src="gambar/gigi.png" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light text-light">Klinik Gigi Faiz</span>
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar navbar-primary">
+    <div class="sidebar">
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -103,7 +104,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="profil.html" class="nav-link">
+                <a href="profil.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Profile</p>
                 </a>
@@ -166,14 +167,6 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper bg-light">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          
-          
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
     <!-- /.content-header -->
 
     <!-- Main content -->
@@ -182,193 +175,139 @@
         <!-- Info boxes -->
     
         <!-- Main row -->
-        <div class="row ">
-            <div class="col-md-12">
-              <h1 class="text-center " >
-                Admin - Klinik Kesehatan Dokter Gigi Faiz - Depok
-              </h1>
-              <div class="row" style="margin-top: 2%;">
-                <div class="col-md-8">
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-12">
+            <div class="card bg-light">
+              <div class="card-header p-2">
+                <div class="tab-content">
+                  <div class="card bg-light ">
+                    <div class="card-body box-profile">
+                      <div class="text-center">
+                        <img class="profile-user-img img-fluid img-circle w-45 h-45 "
+                             src="dist/img/ical.jpeg"
+                             alt="User profile picture">
+                        
+                             <h3 class="profile-username text-center">Drg. Ical</h3>
+                      </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <div class="active tab-pane" id="activity">
+                    <!-- Post -->
+                     <h3 class="card-footer">
+                      Profil drg. Ahmad Faisal Nurhakim, Sp.PD
+                    </h3>
+                    <p class="text-justify mx-3">
+                      Drg. Ahmad Faisal Nurhakim adalah dokter gigi lulus dari Fakultas Kedokteran Gigi, Universitas Indonesia tahun 2009.
+                      Beliau aktif mengikuti berbagai pelatihan 
+                      dan kongres tingkat nasional seperti East Jakarta Destistry (2016), Hands-On: Important Role of Color Modifier to Mask Tertracycline Stained to Create Natural  Teeth with Direct Veener Restoration (2016), Current Clinical Practice Guidelines (2016), Hands On Keunggulan True Nano Komposit (2016).
+                    </p>
+                    <h3 class="card-footer">
+                      Jadwal Praktik
+                    </h3>
+                    <table class="table table-fluid table-bordered table-sm table-hover card-footer">
+                      <thead>
+                        <tr>
+                          <th>
+                            No.
+                          </th>
+                          <th>
+                            Hari
+                          </th>
+                          <th>
+                            Jam
+                          </th>
+                          <th>
+                            Ruangan
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            Senin
+                          </td>
+                          <td>
+                            08.00
+                          </td>
+                          <td>
+                            A-123
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td>
+                            2
+                          </td>
+                          <td>
+                            Selasa
+                          </td>
+                          <td>
+                           13.00
+                          </td>
+                          <td>
+                            B-123
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td>
+                            3
+                          </td>
+                          <td>
+                            Rabu
+                          </td>
+                          <td>
+                            09.00
+                          </td>
+                          <td>
+                            C-321
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td>
+                            4
+                          </td>
+                          <td>
+                            kamis
+                          </td>
+                          <td>
+                            10.00
+                          </td>
+                          <td>
+                            D-321
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td>
+                            5
+                          </td>
+                          <td>
+                            Jum'at
+                          </td>
+                          <td>
+                            11.00
+                          </td>
+                          <td>
+                            E-231
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                  <!-- /.tab-pane -->
                 </div>
-                
-                  </nav>
-                </div>
-              </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
             </div>
+            <!-- /.card -->
           </div>
-          <div class="row">
-            <span class="border border-light" style="width: 100%; margin-top: 5%;">
-            <div class="col-md-12">
-              <div class="row mt-4 ">
-                <div class="col-md-4">
-                  <h3>
-                    Kelola Data Dokter
-                  </h3>
-                </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                  <nav>
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
-                        <a href="#">Home</a>
-                      </li>
-                      <li class="breadcrumb-item">
-                        <a href="#">Admin</a>
-                      </li>
-                      <li class="breadcrumb-item active">
-                        Data
-                      </li>
-                    </ol>
-                  </nav>
-                </div>
-              </div>        
-              <button type="button" class="btn active btn-sm btn-secondary">
-                Tambah
-              </button>
-              <div class="row mt-12"></div>
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>
-                      No
-                    </th>
-                    <th>
-                      Nama Dokter
-                    </th>
-                    <th>
-                      Gender
-                    </th>
-                    <th>
-                      Keahlian
-                    </th>
-                    <th>
-                      Telepon
-                    </th>
-                    <th>
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="table-active">
-                    <td>
-                      1
-                    </td>
-                    <td>
-                      Drg. Amelia
-                    </td>
-                    <td>
-                      Perempuan
-                    </td>
-                    <td>
-                      Spesialis Gigi Anak   
-                    </td>
-                    <td>
-                      084267378923   
-                    </td>
-                    <td>
-                      <button class="btn btn-link" type="submit">Detail</button> |
-                      <button class="btn btn-link" type="submit">Edit</button> |
-                      <button class="btn btn-link" type="submit">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      2
-                    </td>
-                    <td>
-                      Drg. Faiz
-                    </td>
-                    <td>
-                      Laki-laki
-                    </td>
-                    <td>
-                      Spesialis Bedah   
-                    </td>
-                    <td>
-                      085142773819  
-                    </td>
-                    <td>
-                      <button class="btn btn-link" type="submit">Detail</button> |
-                      <button class="btn btn-link" type="submit">Edit</button> |
-                      <button class="btn btn-link" type="submit">Delete</button>
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      3
-                    </td>
-                    <td>
-                      Drg. Fatih
-                    </td>
-                    <td>
-                      Laki-laki
-                    </td>
-                    <td>
-                      Spesialis Saraf
-                    </td>
-                    <td>
-                      089726718892  
-                    </td>
-                    <td>
-                      <button class="btn btn-link" type="submit">Detail</button> |
-                      <button class="btn btn-link" type="submit">Edit</button> |
-                      <button class="btn btn-link" type="submit">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      4
-                    </td>
-                    <td>
-                      Drg. Faisal
-                    </td>
-                    <td>
-                      Laki-laki
-                    </td>
-                    <td>
-                      Spesialis Penyakit Dalam   
-                    </td>
-                    <td>
-                      084299761333
-                    </td>
-                    <td>
-                      <button class="btn btn-link" type="submit">Detail</button> |
-                      <button class="btn btn-link" type="submit">Edit</button> |
-                      <button class="btn btn-link" type="submit">Delete</button>
-                    </td>
-                  </tr>
-                  <tr class="table-active">
-                    <td>
-                      5
-                    </td>
-                    <td>
-                      Drg. Furqon
-                    </td>
-                    <td>
-                      Laki-laki
-                    </td>
-                    <td>
-                      Spesialis Kulit dan Kelamin 
-                    </td>
-                    <td>
-                      085189983178  
-                    </td>
-                    <td>
-                      <button class="btn btn-link" type="submit">Detail</button> |
-                      <button class="btn btn-link" type="submit">Edit</button> |
-                      <button class="btn btn-link" type="submit">Delete</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- /.col -->
-            </div>
-            <!-- /.col -->
-          </span>
-          </div>
+
+
+          <!-- /.col -->
+        </div>
         <!-- /.row -->
       </div><!--/. container-fluid -->
     </section>
@@ -383,6 +322,8 @@
   <!-- /.control-sidebar -->
 
  
+</div>
+<!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
